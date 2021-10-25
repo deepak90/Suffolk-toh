@@ -9,6 +9,6 @@ We immediately liked the changes but we’d like to take it further and we’d l
 1. The app currently has no Suffolk branding and we haven’t changed the UI at all to show the additional data of cost and area.  Please update the app to reflect Suffolk branding.  Also, please change the list view (/heroes) to display cost along with building name.
 2. The dashboard currently displays by position in the list.  Our users care deeply about cost and cost per square foot.  Please change it so the dashboard shows the top 4 building by cost, and add a the total cost as well as the cost/square foot to the four buildings displayed.
 
-If you'd like to help us and be considered for joining our team, please clone this repo, make your changes on a branch, and submit a pull request when you're ready for us to look at them. We value team work at Suffolk, so please reach out if you have any questions.  Your best bet is to email any questions you have to Dave, Michael, and Kian (drolin@suffolk.com, mcarr@suffolk.com, kkenahan@suffolk.com).
+If you'd like to help us and be considered for joining our team, please clone this repo, make your changes on a branch, and submit a pull request when you're ready for us to look at them. We value team work at Suffolk, so please reach out if you have any questions.  We welcome feedback about the structure of this exercise too. Your best bet is to email any questions and feedback you have to Dave, Michael, and Kian (drolin@suffolk.com, mcarr@suffolk.com, kkenahan@suffolk.com).  
 
 Good luck and Happy coding!
