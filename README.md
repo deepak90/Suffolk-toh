@@ -1,8 +1,8 @@
 # Suffolk-toh
-Angular has a Tour of Heroes tutorial which goes through the development of a prototypical app.  Here is a link to the tutorial: https://angular.io/tutorial.  At Suffolk, buildings are our heroes so we’ve made a couple of changes.  Specifically, went to the last part of the tutorial(https://angular.io/tutorial/toh-pt6), we downloaded the files for the finished project (https://angular.io/generated/zips/toh-pt6/toh-pt6.zip), and put them in this repository as the initial commit.  We then updated 2 files to move from hero names to building names and to add sample cost and area data.  Here are the specifics:
+Angular has a Tour of Heroes tutorial which goes through the development of a prototypical app.  Here is a link to the tutorial: https://angular.io/tutorial.  At Suffolk, we construct buildings so we’ve made a couple of changes.  Specifically, we went to the last part of the tutorial(https://angular.io/tutorial/toh-pt6), downloaded the files for the finished project (https://angular.io/generated/zips/toh-pt6/toh-pt6.zip), and put them in this repository as the initial commit.  We then updated 2 files to move from hero names to building names and to add sample cost and area data.  Here are the specifics:
 
-1. **hero.ts** added 2 new fields to the Hero type, cost and area (both are numbers and represent the cost in dollars and the area in square feet)
-2. **in-memory-data.service.ts** changed names from hero names to building names.  Added cost and area info for the buildings.
+1. **src/app/hero.ts:** added 2 new fields to the Hero type, cost and area (both are numbers and represent the cost in dollars and the area in square feet)
+2. **src/app/in-memory-data.service.ts:** changed names from hero names to building names.  Added cost and area info for the buildings.
 
 Here's the original vanilla version of the tutorial (left) and our slightly changed version (right):
 
