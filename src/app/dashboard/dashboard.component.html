@@ -1,9 +1,14 @@
-<h2>Top Heroes</h2>
 <div class="heroes-menu">
-  <a *ngFor="let hero of heroes"
-      routerLink="/detail/{{hero.id}}">
-      {{hero.name}}
-  </a>
+  <h2 class="section-title">Our Featured Projects</h2>
+  <ul class="slides">
+    <li *ngFor="let hero of heroes" class="card-bucket-style">
+      <div class="text-container"> <span>Projects</span>
+        <h4>{{hero.name}}</h4>
+        <p>USD {{formatCurrency(hero.cost)}} @ {{formatCostPerSqFt(hero.cost, hero.area)}}/sqft</p>
+        <a routerLink="/detail/{{hero.id}}" class="arrow-linkoff" target="_blank">Read More</a>
+      </div>
+    </li>
+  </ul>
 </div>
 
 <app-hero-search></app-hero-search>

@@ -36,4 +36,7 @@ export class HeroesComponent implements OnInit {
     this.heroService.deleteHero(hero.id).subscribe();
   }
 
+  formatCurrency(cost: number = 0): string {
+    return this.heroService.formatCurrency(cost)
+  }
 }

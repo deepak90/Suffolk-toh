@@ -1,54 +1,147 @@
-/* DashboardComponent's private CSS styles */
-
-h2 {
+.heroes-menu{
+  background: linear-gradient(180deg, #2a112b 50%, #dad5cd 50%);
+  padding: 50px;
+}
+.heroes-menu h2 {
   text-align: center;
+  color: #b2d2e3;
+  font-size: 40px;
 }
 
-.heroes-menu {
+.slides {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding: 0;
-  margin: auto;
-  max-width: 1000px;
-
-  /* flexbox */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: flex-start;
+  margin-top: 50px;
 }
 
-a {
-  background-color: #3f525c;
-  border-radius: 2px;
-  padding: 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  min-width: 70px;
-  margin: .5rem auto;
-  box-sizing: border-box;
-
-  /* flexbox */
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-}
-
-@media (min-width: 600px) {
-  a {
-    width: 18%;
-    box-sizing: content-box;
+@media (max-width: 800px) {
+  .heroes-menu {
+    background: linear-gradient(180deg, #2a112b 40%, #dad5cd 40%);
+  }
+  .slides {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
   }
 }
 
-a:hover {
-  background-color: black;
+@media (max-width: 500px) {
+  .heroes-menu {
+    background: linear-gradient(180deg, #2a112b 25%, #dad5cd 25%);
+  }
+  .slides {
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+}
+
+.card-bucket-style{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+  -webkit-box-direction: normal;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  max-width: 300px;
+  min-height: 100px;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,.1);
+  padding: 0 0 30px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3px;
+  width: 100%;
+  display: inline-block;
+}
+
+.card-bucket-style span {
+  line-height: 1.5;
+  font-weight: 300;
+  -webkit-box-direction: normal;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 30px;
+  opacity: .5;
+  color: #161a1b;
+  margin: 20px 0 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.card-bucket-style h4 {
+  -webkit-box-direction: normal;
+  list-style: none;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  font-weight: 300;
+  padding: 0 30px;
+  color: #2a112b;
+  font-size: 24px;
+  word-break: break-word;
+}
+
+.card-bucket-style p {
+  font-weight: 300;
+  -webkit-box-direction: normal;
+  list-style: none;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #161a1b;
+}
+
+.card-bucket-style a {
+  font-weight: 300;
+  -webkit-box-direction: normal;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #2a112b;
+}
+
+.card-bucket-style a:hover {
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+  color: #2a112b;
+}
+
+.card-bucket-style a:hover:after {
+ opacity: 1;
+ transform: translate(10%,0) rotate(
+-40deg);
+}
+
+.card-bucket-style a:after {
+  transform: rotate(-40deg);
+  margin-left: 8px;
+  background: url(https://www.suffolk.com/wp-content/themes/suffolk-theme/img/icon-link-arrow.svg) center no-repeat;
+  background-size: contain;
+  content: " ";
+  display: inline-block;
+  height: 20px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-family: FontAwesome;
+  font-size: 19px;
+  opacity: .5;
+  color: #2a112b;
+  font-weight: 100;
+  vertical-align: middle;
+  width: 20px;
+  transition: all .2s ease-in-out;
 }

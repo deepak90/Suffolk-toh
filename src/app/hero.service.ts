@@ -119,4 +119,21 @@ export class HeroService {
   private log(message: string) {
     this.messageService.add(`HeroService: ${message}`);
   }
+
+  /**Format Currency to en-US locale, removes decimals */
+  formatCurrency(cost: number = 0): string {
+    return new Intl.NumberFormat(
+      'en-US',
+        {  
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 0, 
+          minimumFractionDigits: 0
+        }
+    ).format(cost)
+  }
+
+  calculateCostPerSqft(totalCost : number = 0, area: number = 0): number {
+    return totalCost/area;
+  }
 }
