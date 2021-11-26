@@ -1,25 +1,16 @@
-/* HeroDetailComponent's private CSS styles */
-label {
-  color: #435960;
-  font-weight: bold;
+.edit-project{
+  background: #2a112b;
+  padding: 50px;
 }
-input {
-  font-size: 1em;
-  padding: .5rem;
+
+@media (max-width: 767px) {
+  .edit-project {
+    background: linear-gradient(180deg, #2a112b 40%, #dad5cd 40%);
+  }
 }
-button {
-  margin-top: 20px;
-  margin-right: .5rem;
-  background-color: #eee;
-  padding: 1rem;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-button:hover {
-  background-color: #cfd8dc;
-}
-button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
+
+@media (max-width: 575px) {
+  .edit-project {
+    background: linear-gradient(180deg, #2a112b 25%, #dad5cd 25%);
+  }
 }

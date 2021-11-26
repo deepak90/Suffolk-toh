@@ -1,6 +1,6 @@
 <div class="dashboard">
   <div class="container-fluid">
-    <h2 class="section-title">Featured Projects</h2>
+    <h2 class="section-title mt-5 h1">Featured Projects</h2>
     <p class="section-description mb-5">Explore our projects and see how we’re transforming the built world.</p>
     <div class="cards my-5">
       <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 g-4 my-5">
@@ -14,7 +14,7 @@
                 <p class="card-text m-0 lead">USD {{formatCurrency(hero.cost)}}</p>
                 <p class="card-text mb-2 text-muted">Cost Per Squarefoot: {{formatCostPerSqFt(hero.cost, hero.area)}}</p>
               </div>
-              <a class="read-more" routerLink="/detail/{{hero.id}}" target="_blank">Read More</a>
+              <a class="read-more" routerLink="/detail/{{hero.id}}">Read More</a>
             </div>
           </div>
         </div>

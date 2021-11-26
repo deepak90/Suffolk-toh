@@ -3,3 +3,65 @@ html, body {
     height: 100%;
     background-color: #dad5cd;
 }
+  
+  .section-title {
+    color: #b2d2e3;
+  }
+  
+  .section-description {
+    color: white;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #2a112b;
+  }
+
+
+/* Source: https://www.suffolk.com/ */
+.read-more {
+    font-weight: 300;
+    -webkit-box-direction: normal;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #2a112b;
+  }
+  
+  .read-more:hover {
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline;
+    color: #2a112b;
+  }
+  
+  .read-more:hover:after {
+   opacity: 1;
+   transform: translate(10%,0) rotate(
+  -40deg);
+  }
+  
+  .read-more:after {
+    transform: rotate(-40deg);
+    margin-left: 8px;
+    background: url(https://www.suffolk.com/wp-content/themes/suffolk-theme/img/icon-link-arrow.svg) center no-repeat;
+    background-size: contain;
+    content: " ";
+    display: inline-block;
+    height: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-family: FontAwesome;
+    font-size: 19px;
+    opacity: .5;
+    color: #2a112b;
+    font-weight: 100;
+    vertical-align: middle;
+    width: 20px;
+    transition: all .2s ease-in-out;
+  }
