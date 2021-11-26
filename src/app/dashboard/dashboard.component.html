@@ -1,14 +1,24 @@
-<div class="heroes-menu">
-  <h2 class="section-title">Our Featured Projects</h2>
-  <ul class="slides">
-    <li *ngFor="let hero of heroes" class="card-bucket-style">
-      <div class="text-container"> <span>Projects</span>
-        <h4>{{hero.name}}</h4>
-        <p>USD {{formatCurrency(hero.cost)}} @ {{formatCostPerSqFt(hero.cost, hero.area)}}/sqft</p>
-        <a routerLink="/detail/{{hero.id}}" class="arrow-linkoff" target="_blank">Read More</a>
+<div class="dashboard">
+  <div class="container-fluid">
+    <div class="my-5">
+      <h2 class="text-center my-5">Our Featured Work</h2>
+      <div class="cards my-5">
+        <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 g-4 my-5">
+          <div class="col" *ngFor="let hero of heroes">
+            <div class="card">
+              <img src="{{'https://via.placeholder.com/300x200.png?text=' + hero.name}}" class="card-img-top"
+                alt="{{hero.name}}">
+              <div class="card-body">
+                <h4 class="card-title">{{hero.name}}</h4>
+                <p class="card-text">USD {{formatCurrency(hero.cost)}} @ {{formatCostPerSqFt(hero.cost,
+                  hero.area)}}/sqft
+                </p>
+                <a routerLink="/detail/{{hero.id}}" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
-
-<app-hero-search></app-hero-search>

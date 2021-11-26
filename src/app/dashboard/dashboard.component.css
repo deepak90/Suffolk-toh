@@ -1,37 +1,24 @@
-.heroes-menu{
+.dashboard{
   background: linear-gradient(180deg, #2a112b 50%, #dad5cd 50%);
   padding: 50px;
 }
-.heroes-menu h2 {
+
+@media (max-width: 767px) {
+  .dashboard {
+    background: linear-gradient(180deg, #2a112b 40%, #dad5cd 40%);
+  }
+}
+
+@media (max-width: 575px) {
+  .dashboard {
+    background: linear-gradient(180deg, #2a112b 25%, #dad5cd 25%);
+  }
+}
+
+.dashboard h2 {
   text-align: center;
   color: #b2d2e3;
   font-size: 40px;
-}
-
-.slides {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  padding: 0;
-  margin-top: 50px;
-}
-
-@media (max-width: 800px) {
-  .heroes-menu {
-    background: linear-gradient(180deg, #2a112b 40%, #dad5cd 40%);
-  }
-  .slides {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-  }
-}
-
-@media (max-width: 500px) {
-  .heroes-menu {
-    background: linear-gradient(180deg, #2a112b 25%, #dad5cd 25%);
-  }
-  .slides {
-    grid-template-columns: repeat(1, minmax(150px, 1fr));
-  }
 }
 
 .card-bucket-style{
