@@ -15,77 +15,21 @@
   }
 }
 
-.dashboard h2 {
-  text-align: center;
+.section-title {
   color: #b2d2e3;
-  font-size: 40px;
 }
 
-.card-bucket-style{
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #212529;
-  font-family: "Roboto",sans-serif;
-  font-weight: 300;
-  -webkit-box-direction: normal;
-  box-sizing: border-box;
-  margin: 0;
-  list-style: none;
-  max-width: 300px;
-  min-height: 100px;
-  background-color: #fff;
-  box-shadow: 5px 5px 20px 0 rgba(0,0,0,.1);
-  padding: 0 0 30px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 3px;
-  width: 100%;
-  display: inline-block;
+.section-description {
+  color: white;
 }
 
-.card-bucket-style span {
-  line-height: 1.5;
-  font-weight: 300;
-  -webkit-box-direction: normal;
-  list-style: none;
-  box-sizing: border-box;
-  padding: 0 30px;
-  opacity: .5;
-  color: #161a1b;
-  margin: 20px 0 10px;
-  display: inline-block;
-  font-size: 14px;
-}
-
-.card-bucket-style h4 {
-  -webkit-box-direction: normal;
-  list-style: none;
-  box-sizing: border-box;
-  margin-top: 0;
-  margin-bottom: .5rem;
-  line-height: 1.2;
-  font-weight: 300;
-  padding: 0 30px;
+.card-title {
+  font-weight: bold;
   color: #2a112b;
-  font-size: 24px;
-  word-break: break-word;
 }
 
-.card-bucket-style p {
-  font-weight: 300;
-  -webkit-box-direction: normal;
-  list-style: none;
-  box-sizing: border-box;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 0 30px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: normal;
-  color: #161a1b;
-}
-
-.card-bucket-style a {
+/* Source: https://www.suffolk.com/ */
+.read-more {
   font-weight: 300;
   -webkit-box-direction: normal;
   list-style: none;
@@ -94,26 +38,25 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  padding: 0 30px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: normal;
   color: #2a112b;
 }
 
-.card-bucket-style a:hover {
+.read-more:hover {
   transition: all 0.2s ease-in-out;
   text-decoration: underline;
   color: #2a112b;
 }
 
-.card-bucket-style a:hover:after {
+.read-more:hover:after {
  opacity: 1;
  transform: translate(10%,0) rotate(
 -40deg);
 }
 
-.card-bucket-style a:after {
+.read-more:after {
   transform: rotate(-40deg);
   margin-left: 8px;
   background: url(https://www.suffolk.com/wp-content/themes/suffolk-theme/img/icon-link-arrow.svg) center no-repeat;
