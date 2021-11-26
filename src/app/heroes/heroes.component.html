@@ -1,21 +1,23 @@
-<h2>My Heroes</h2>
-
-<div>
-  <label for="new-hero">Hero name: </label>
-  <input id="new-hero" #heroName />
-
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button class="add-button" (click)="add(heroName.value); heroName.value=''">
-    Add hero
-  </button>
+<div class="our-work">
+  <div class="container-fluid">
+    <h2 class="section-title mt-5 h1">Our Work</h2>
+    <p class="section-description mb-5">We serve clients in every major industry sector. Learn more about our approach, projects, and results in each field.</p>
+    <div class="cards my-5">
+      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 g-4 my-5">
+        <div class="col" *ngFor="let hero of heroes">
+          <div class="card">
+            <img src="{{'https://via.placeholder.com/300x200.png?text=' + hero.name}}" class="card-img-top"
+              alt="{{hero.name}}">
+            <div class="card-body">
+              <h4 class="card-title">{{hero.name}}</h4>
+              <div class="details">
+                <p class="card-text m-0 lead">USD {{formatCurrency(hero.cost)}}</p>
+              </div>
+              <a class="read-more" routerLink="/detail/{{hero.id}}">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button class="delete" title="delete hero"
-      (click)="delete(hero)">x</button>
-  </li>
-</ul>

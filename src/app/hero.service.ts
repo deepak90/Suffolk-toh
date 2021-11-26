@@ -119,4 +119,30 @@ export class HeroService {
   private log(message: string) {
     this.messageService.add(`HeroService: ${message}`);
   }
+
+  /** 
+   * Formats Currency to en-US locale, removes decimals
+   * @param cost - total cost of the project
+   */
+  formatCurrency(cost: number = 0): string {
+    return new Intl.NumberFormat(
+      'en-US',
+        {  
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 0, 
+          minimumFractionDigits: 0
+        }
+    ).format(cost)
+  }
+
+  /** 
+   * Calculates cost per sq/ft given the total cost and the total area 
+   * @param totalCost - total cost of the project
+   * @param area - total area of the project
+   */
+  calculateCostPerSqft(totalCost : number = 0, area: number = 0): number {
+    if(!totalCost || !area) return 0;
+    return totalCost/area;
+  }
 }
